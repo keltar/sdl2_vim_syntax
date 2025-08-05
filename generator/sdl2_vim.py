@@ -101,6 +101,7 @@ def process_file(filename, incpath):
 			"-D_SDL_platform_h=1",
 			"-D_SDL_endian_h=1",
 			"-DSDL_FORCE_INLINE=", "-D__attribute__(x)=",
+			"-DSDL_FALLTHROUGH=",
 	];
 	ast = parse_file(filename, use_cpp=True, cpp_args=cppargs);
 	v = visitor();
