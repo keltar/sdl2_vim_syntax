@@ -1,6 +1,6 @@
-# SDL2 Vim syntax file
+# SDL2/SDL3 Vim syntax file
 
-This file adds Vim/Neovim syntax highlighting for SDL2.
+This file adds Vim/Neovim syntax highlighting for SDL2 and SDL3.
 
 ## Usage
 
@@ -12,6 +12,8 @@ augroup sdl2
     autocmd FileType c,cpp source ~/.vim/syntax/sdl2.vim
 augroup END
 ```
+
+For SDL3, use sdl3.vim.
 
 ## Generating the Syntax File
 
