@@ -21,7 +21,7 @@ class visitor(c_ast.NodeVisitor):
 		elif isinstance(node.type, c_ast.PtrDecl):
 			t = node.type.type;
 
-		if t != None:
+		if t != None and isinstance(t, c_ast.TypeDecl):
 			if t.declname[:4] == "SDL_":
 				self.functions.append(t.declname);
 
